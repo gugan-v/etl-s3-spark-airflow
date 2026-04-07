@@ -34,8 +34,7 @@ The pipeline follows a batch processing architecture:
 - Apache Airflow orchestrates and schedules the workflow  
 
 Flow:
-S3 → PySpark → S3 → Airflow
-
+CSV → S3 → Airflow DAG → Spark → S3 (output)
 ---
 
 ## 📂 Project Structure
