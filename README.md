@@ -1,9 +1,10 @@
 # 🚀 ETL Pipeline: S3 + PySpark + Airflow
 
-## 📌 Project Overview
-This project demonstrates an end-to-end ETL pipeline built using modern data engineering tools to process and transform data in a cloud environment.
-
-The pipeline extracts raw CSV data from AWS S3, processes it using PySpark, and loads the transformed data back into S3. Workflow orchestration is handled using Apache Airflow.
+## 📌 Project Impact
+- Built an automated ETL pipeline to process cloud-based data efficiently  
+- Reduced manual data processing by introducing workflow automation using Airflow  
+- Simulates a real-world data engineering pipeline used in production systems  
+- Demonstrates handling of batch data processing using distributed computing (PySpark)
 
 ---
 
@@ -25,7 +26,15 @@ The pipeline extracts raw CSV data from AWS S3, processes it using PySpark, and 
 ---
 
 ## 🏗️ Architecture
-S3 (Input) → PySpark (Processing) → S3 (Output) → Airflow (Orchestration)
+The pipeline follows a batch processing architecture:
+
+- Data is stored in AWS S3 (input layer)  
+- PySpark processes and transforms the data  
+- Transformed data is written back to S3  
+- Apache Airflow orchestrates and schedules the workflow  
+
+Flow:
+S3 → PySpark → S3 → Airflow
 
 ---
 
